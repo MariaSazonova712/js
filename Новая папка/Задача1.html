@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 1280px;
+            width: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .elem {
+            width: 200px;
+            height: 350px;
+            background-color: rgb(65, 133, 133);
+            margin: 12px;
+            cursor: pointer;
+        }
+
+        .elem h1 {
+            text-align: center;
+            padding-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="elem">
+            <h1>1</h1>
+        </div>
+        <div class="elem">
+
+            <h1>2</h1>
+        </div>
+        <div class="elem">
+            <h1>3</h1>
+        </div>
+        <div class="elem">
+            <h1>4</h1>
+        </div>
+        <div class="elem">
+            <h1>5</h1>
+        </div>
+        <div class="elem">
+            <h1>6</h1>
+        </div>
+        <div class="elem">
+            <h1>7</h1>
+        </div>
+        <div class="elem">
+            <h1>8</h1>
+        </div>
+        <div class="elem">
+            <h1>9</h1>
+        </div>
+        <div class="elem">
+            <h1>10</h1>
+        </div>
+    </div>
+    <script>
+container.onclick = function(event){
+    let elem = event.target.closest('.elem')
+    elem.remove();
+}
+    </script>
+
+
+</body>
+
+</html>
